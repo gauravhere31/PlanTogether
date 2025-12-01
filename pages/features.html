@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-page="features">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Together — Feature architecture</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <script defer src="../js/app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="navbar">
+        <div class="navbar__inner">
+          <a href="index.html" class="navbar__brand">
+            <span class="navbar__logo" aria-hidden="true"></span>
+            <div>
+              <div class="navbar__title">Plan Together</div>
+              <div class="navbar__meta">Feature architecture</div>
+            </div>
+          </a>
+          <nav class="navbar__nav" aria-label="Primary">
+            <a class="navbar__link" href="index.html">Home</a>
+            <a class="navbar__link" href="product.html">Product</a>
+            <a class="navbar__link navbar__link--active" href="features.html">Features</a>
+            <a class="navbar__link" href="ai.html">AI</a>
+            <a class="navbar__link" href="safety.html">Safety</a>
+            <a class="navbar__link" href="marketplace.html">Marketplace</a>
+          </nav>
+          <div class="navbar__pill">Scalable from beta to marketplace</div>
+        </div>
+      </header>
+
+      <main class="page-shell">
+        <section class="section reveal-on-scroll">
+          <div class="section__header">
+            <div>
+              <div class="section__eyebrow">Modules</div>
+              <h1 class="section__title">Everything a serious trip planner needs, without noise.</h1>
+              <p class="section__subtitle">
+                Each module is a component in our design system: reusable, testable, and ready to plug into APIs and payments.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid--3 feature-grid">
+            <article class="surface-card feature-grid__item">
+              <h2 class="feature-grid__item-title">Master Itinerary Auto-Build</h2>
+              <p class="feature-grid__item-body">
+                Input dates, city, and group constraints. The AI drafts a full-day grid with anchor events, buffers, and backup options for weather or delays.
+              </p>
+            </article>
+            <article class="surface-card feature-grid__item">
+              <h2 class="feature-grid__item-title">Smart Budgeting</h2>
+              <p class="feature-grid__item-body">
+                Category-based budgets, currency conversions, and spend alerts. Built to export into finance tools and operator dashboards.
+              </p>
+            </article>
+            <article class="surface-card feature-grid__item">
+              <h2 class="feature-grid__item-title">Bill-Split AI</h2>
+              <p class="feature-grid__item-body">
+                Per-person caps, by-role rules, and fairness modes. Works for teams, friends, and family groups in the same interface.
+              </p>
+            </article>
+            <article class="surface-card feature-grid__item">
+              <h2 class="feature-grid__item-title">Offline Navigation</h2>
+              <p class="feature-grid__item-body">
+                Cached routes, offline tiles, and emergency turn-by-turn that prioritises safe and well-lit paths when data drops.
+              </p>
+            </article>
+            <article class="surface-card feature-grid__item">
+              <h2 class="feature-grid__item-title">Local Business Marketplace</h2>
+              <p class="feature-grid__item-body">
+                Verified hotels, food, and experiences with transparent ratings and open hours, tuned for local owners and global travellers.
+              </p>
+            </article>
+            <article class="surface-card feature-grid__item">
+              <h2 class="feature-grid__item-title">Live Tracking</h2>
+              <p class="feature-grid__item-body">
+                Opt-in location sharing so groups, organisers, and guardians know who has checked in, safely and privately.
+              </p>
+            </article>
+            <article class="surface-card feature-grid__item">
+              <h2 class="feature-grid__item-title">Group Plan Collaboration</h2>
+              <p class="feature-grid__item-body">
+                Reactions, suggestions, and approvals 1 with a clean decision history that operators and investors can audit.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__meta">Feature grid 1 modelled as reusable components.</div>
+          <div class="footer__links">
+            <a href="ai.html">AI system</a>
+            <a href="budgeting.html">Budget dashboard</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

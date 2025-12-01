@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-page="product">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Together — Product flow</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <script defer src="../js/app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="navbar">
+        <div class="navbar__inner">
+          <a href="index.html" class="navbar__brand">
+            <span class="navbar__logo" aria-hidden="true"></span>
+            <div>
+              <div class="navbar__title">Plan Together</div>
+              <div class="navbar__meta">Product storyboard</div>
+            </div>
+          </a>
+          <nav class="navbar__nav" aria-label="Primary">
+            <a class="navbar__link" href="index.html">Home</a>
+            <a class="navbar__link navbar__link--active" href="product.html">Product</a>
+            <a class="navbar__link" href="features.html">Features</a>
+            <a class="navbar__link" href="ai.html">AI</a>
+            <a class="navbar__link" href="marketplace.html">Marketplace</a>
+          </nav>
+          <div class="navbar__pill">No login required 1 demo-ready</div>
+        </div>
+      </header>
+
+      <main class="page-shell">
+        <section class="section reveal-on-scroll">
+          <div class="section__header">
+            <div>
+              <div class="section__eyebrow">End-to-end trip flow</div>
+              <h1 class="section__title">One canvas for the whole trip lifecycle.</h1>
+              <p class="section__subtitle">
+                From idea to touchdown back home, Plan Together keeps itinerary, budget, and map in one synced workspace.
+              </p>
+            </div>
+            <div class="tag-row">
+              <span class="pill">Master itinerary auto-build</span>
+              <span class="pill">Smart budgeting</span>
+              <span class="pill">Multi-stop maps</span>
+            </div>
+          </div>
+
+          <div class="layout-split" data-section="product-demo">
+            <article class="surface-card">
+              <h2 class="surface-card__title">1. Master itinerary, built with your group</h2>
+              <p class="surface-card__subtitle">
+                Start from a blank canvas or a city template. Drag-and-drop moments, lock mission-critical events, and let the AI resolve conflicts around them.
+              </p>
+              <table class="table-lite" aria-label="Itinerary overview">
+                <thead>
+                  <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">Plan</th>
+                    <th scope="col">Owner</th>
+                    <th scope="col">Safety</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>09:00</td>
+                    <td>Hotel check-in + luggage drop</td>
+                    <td>Group 8</td>
+                    <td>Near hospital & metro line</td>
+                  </tr>
+                  <tr>
+                    <td>12:30</td>
+                    <td>Lunch at local co-op restaurant</td>
+                    <td>Alex</td>
+                    <td>Verified business profile</td>
+                  </tr>
+                  <tr>
+                    <td>19:00</td>
+                    <td>Sunset viewpoint</td>
+                    <td>Sam</td>
+                    <td>Route avoids unlit streets</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+
+            <article class="surface-card surface-card--soft">
+              <h2 class="surface-card__title">2. Budget & bill-split that stays live</h2>
+              <p class="surface-card__subtitle">
+                Every itinerary change updates budget ranges, per-person contributions, and currency conversions in real time.
+              </p>
+              <div class="budget-summary-row" style="margin-top:0.9rem;">
+                <div>
+                  <div class="label">Trip budget (group)</div>
+                  <div class="stat__value">$4,200</div>
+                  <div class="stat__label">3 nights, 5 travellers</div>
+                </div>
+                <div>
+                  <div class="label">Per person estimate</div>
+                  <div class="stat__value">$840</div>
+                  <div class="stat__label">Bill-split AI with caps</div>
+                </div>
+                <div>
+                  <div class="label">Protected categories</div>
+                  <div class="stat__value">3</div>
+                  <div class="stat__label">Lodging, safety, transit</div>
+                </div>
+              </div>
+              <div class="budget-tag-row" style="margin-top:0.8rem;">
+                <span class="pill">Currency-aware</span>
+                <span class="pill">Exportable to finance tools</span>
+                <span class="pill">Per-role spending policies</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal-on-scroll">
+          <div class="section__header">
+            <div>
+              <div class="section__eyebrow">Live map storyboard</div>
+              <h2 class="section__title">3. Routes that understand time, distance, and safety.</h2>
+              <p class="section__subtitle">
+                Every map combines group preferences with live advisories, local business hours, and travel-time intelligence.
+              </p>
+            </div>
+          </div>
+          <div class="map-shell">
+            <div class="map-canvas">
+              <div class="map-canvas__hint">Prototype map layer 1 ready for live tiles & POIs</div>
+            </div>
+            <aside class="surface-card surface-card--soft">
+              <div class="surface-card__title">Route preview</div>
+              <p class="surface-card__subtitle">
+                AI balances scenic routes, safety overlays, and arrival times. Perfect for families, teams, and solo travellers joining later.
+              </p>
+              <div class="stat-row" style="margin-top:0.9rem;">
+                <div>
+                  <div class="label">Total distance</div>
+                  <div class="stat__value" data-map="summary-distance">54 km</div>
+                </div>
+                <div>
+                  <div class="label">Total travel time</div>
+                  <div class="stat__value" data-map="summary-time">72 min total</div>
+                </div>
+              </div>
+              <div class="map-route-list" data-map="route-list"></div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__meta">Product view 1 made to plug into APIs, payments, and live map data.</div>
+          <div class="footer__links">
+            <a href="ai.html">Explore Plan Together AI</a>
+            <a href="contact.html">Talk to the team</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script defer src="../js/map.js"></script>
+  </body>
+</html>

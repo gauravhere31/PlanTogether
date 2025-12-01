@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-page="marketplace">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Together — Local Marketplace</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <script defer src="../js/app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="navbar">
+        <div class="navbar__inner">
+          <a href="index.html" class="navbar__brand">
+            <span class="navbar__logo" aria-hidden="true"></span>
+            <div>
+              <div class="navbar__title">Plan Together</div>
+              <div class="navbar__meta">Local business marketplace</div>
+            </div>
+          </a>
+          <nav class="navbar__nav" aria-label="Primary">
+            <a class="navbar__link" href="index.html">Home</a>
+            <a class="navbar__link" href="product.html">Product</a>
+            <a class="navbar__link" href="features.html">Features</a>
+            <a class="navbar__link" href="ai.html">AI</a>
+            <a class="navbar__link navbar__link--active" href="marketplace.html">Marketplace</a>
+          </nav>
+          <div class="navbar__pill">Future booking & payouts ready</div>
+        </div>
+      </header>
+
+      <main class="page-shell">
+        <section class="section reveal-on-scroll">
+          <div class="section__header">
+            <div>
+              <div class="section__eyebrow">Local-first</div>
+              <h1 class="section__title">A marketplace built for local owners and serious planners.</h1>
+              <p class="section__subtitle">
+                Hotels, food, and experiences connect directly into the itinerary, budget, and map. Each card is wired for future booking APIs.
+              </p>
+            </div>
+            <form class="newsletter__form" role="search" aria-label="Marketplace search" data-marketplace-search>
+              <label class="form-field" style="min-width:220px;flex:1;">
+                <span class="label">Search city or experience</span>
+                <input class="input" type="search" placeholder="e.g. Lisbon, family-friendly hotel" />
+              </label>
+              <button class="btn btn--ghost" type="submit">Preview results</button>
+            </form>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="surface-card market-grid__card">
+              <div class="market-grid__row">
+                <h2 class="market-grid__title">Riverside Atelier Hotel</h2>
+                <span class="badge-dot"><span class="badge-dot__dot"></span>4.8</span>
+              </div>
+              <p class="market-grid__meta">Boutique hotel · Near historic centre · Group-friendly check-in</p>
+              <div class="market-grid__tags">
+                <span class="pill">Late check-in</span>
+                <span class="pill">Workspace ready</span>
+                <span class="pill">Verified owner</span>
+              </div>
+              <div class="market-grid__cta-row">
+                <div class="section__subtitle" style="font-size:0.8rem;">
+                  Open 24/7 · Ideal for remote teams and long weekends.
+                </div>
+                <button class="btn btn--primary" type="button" data-endpoint="/booking/hotels" disabled>Book soon</button>
+              </div>
+            </article>
+
+            <article class="surface-card market-grid__card">
+              <div class="market-grid__row">
+                <h2 class="market-grid__title">Co-op Kitchen Collective</h2>
+                <span class="badge-dot"><span class="badge-dot__dot"></span>4.7</span>
+              </div>
+              <p class="market-grid__meta">Community restaurant · Local sourcing · Group menus</p>
+              <div class="market-grid__tags">
+                <span class="pill">Vegetarian-friendly</span>
+                <span class="pill">Fixed-price group menu</span>
+                <span class="pill">Late dinner slots</span>
+              </div>
+              <div class="market-grid__cta-row">
+                <div class="section__subtitle" style="font-size:0.8rem;">
+                  Open 12:00–23:00 · Perfect for group celebrations.
+                </div>
+                <button class="btn btn--primary" type="button" data-endpoint="/booking/food" disabled>Reserve soon</button>
+              </div>
+            </article>
+
+            <article class="surface-card market-grid__card">
+              <div class="market-grid__row">
+                <h2 class="market-grid__title">Harbour Night Walks</h2>
+                <span class="badge-dot"><span class="badge-dot__dot"></span>4.9</span>
+              </div>
+              <p class="market-grid__meta">Licensed guide · Small groups · Safety brief included</p>
+              <div class="market-grid__tags">
+                <span class="pill">Emergency-ready routes</span>
+                <span class="pill">Multi-language</span>
+                <span class="pill">Supports local guides</span>
+              </div>
+              <div class="market-grid__cta-row">
+                <div class="section__subtitle" style="font-size:0.8rem;">
+                  Departures at 19:00 & 21:00 · Synced to your itinerary.
+                </div>
+                <button class="btn btn--primary" type="button" data-endpoint="/booking/experiences" disabled>Join waitlist</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__meta">Marketplace UI is wired for future booking, payouts, and live inventory.</div>
+          <div class="footer__links">
+            <a href="budgeting.html">Budgeting</a>
+            <a href="contact.html">Partner with us</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

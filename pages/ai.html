@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-page="ai">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Together — AI system</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <script defer src="../js/app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="navbar">
+        <div class="navbar__inner">
+          <a href="index.html" class="navbar__brand">
+            <span class="navbar__logo" aria-hidden="true"></span>
+            <div>
+              <div class="navbar__title">Plan Together</div>
+              <div class="navbar__meta">AI routing & planning engine</div>
+            </div>
+          </a>
+          <nav class="navbar__nav" aria-label="Primary">
+            <a class="navbar__link" href="index.html">Home</a>
+            <a class="navbar__link" href="product.html">Product</a>
+            <a class="navbar__link" href="features.html">Features</a>
+            <a class="navbar__link navbar__link--active" href="ai.html">AI</a>
+            <a class="navbar__link" href="safety.html">Safety</a>
+          </nav>
+          <div class="navbar__pill">Explainable LLM flows</div>
+        </div>
+      </header>
+
+      <main class="page-shell">
+        <section class="section reveal-on-scroll">
+          <div class="section__header">
+            <div>
+              <div class="section__eyebrow">Intelligence</div>
+              <h1 class="section__title">LLM-powered planning that you can question and trust.</h1>
+              <p class="section__subtitle">
+                Our AI does not just propose a route. It explains trade-offs, shows alternatives, and stays aligned with government advisories.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid--2">
+            <article class="surface-card">
+              <h2 class="surface-card__title">Context graph for each trip</h2>
+              <p class="surface-card__subtitle">
+                We maintain a private graph per trip: travellers, constraints, risk appetite, accessibility needs, and budgets. LLM calls and map engines read from the same graph.
+              </p>
+            </article>
+            <article class="surface-card">
+              <h2 class="surface-card__title">Dynamic POI intelligence</h2>
+              <p class="surface-card__subtitle">
+                Points of interest are enriched with opening hours, safety scores, crowding patterns, and transport complexity so you can see the "why" behind each suggestion.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal-on-scroll">
+          <div class="section__header">
+            <div>
+              <div class="section__eyebrow">Routing & recommendations</div>
+              <h2 class="section__title">From group chat to route in minutes.</h2>
+            </div>
+          </div>
+          <div class="grid grid--3">
+            <article class="surface-card surface-card--soft">
+              <div class="surface-card__title">1. Ingest</div>
+              <p class="surface-card__subtitle">
+                Import group chats, PDFs, emails, and calendar holds. The LLM cleans, deduplicates, and turns them into structured preferences.
+              </p>
+            </article>
+            <article class="surface-card surface-card--soft">
+              <div class="surface-card__title">2. Plan</div>
+              <p class="surface-card__subtitle">
+                Planning agents propose a draft itinerary and budget that satisfy hard constraints first: safety, timing, and group must-haves.
+              </p>
+            </article>
+            <article class="surface-card surface-card--soft">
+              <div class="surface-card__title">3. Explain</div>
+              <p class="surface-card__subtitle">
+                Each suggestion comes with rationale, alternative options, and a change-log that operators and travellers can audit.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__meta">AI that understands routes, budgets, and people.</div>
+          <div class="footer__links">
+            <a href="safety.html">Safety posture</a>
+            <a href="marketplace.html">Marketplace vision</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

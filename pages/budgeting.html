@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-page="budgeting">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Together — Smart Budgeting</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <script defer src="../js/app.js"></script>
+    <script defer src="../js/budget.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="navbar">
+        <div class="navbar__inner">
+          <a href="index.html" class="navbar__brand">
+            <span class="navbar__logo" aria-hidden="true"></span>
+            <div>
+              <div class="navbar__title">Plan Together</div>
+              <div class="navbar__meta">Smart budgeting & bill-split</div>
+            </div>
+          </a>
+          <nav class="navbar__nav" aria-label="Primary">
+            <a class="navbar__link" href="index.html">Home</a>
+            <a class="navbar__link" href="product.html">Product</a>
+            <a class="navbar__link" href="features.html">Features</a>
+            <a class="navbar__link navbar__link--active" href="budgeting.html">Budgeting</a>
+          </nav>
+          <div class="navbar__pill">Designed for shared trips</div>
+        </div>
+      </header>
+
+      <main class="page-shell">
+        <section class="section reveal-on-scroll" data-budget="root">
+          <div class="section__header">
+            <div>
+              <div class="section__eyebrow">Numbers that stay live</div>
+              <h1 class="section__title">One budget, clear splits, no awkward messages.</h1>
+              <p class="section__subtitle">
+                Model total spend, currency, and per-person impact before you book. Every line item can be tied back to an itinerary block.
+              </p>
+            </div>
+          </div>
+
+          <div class="budget-shell">
+            <article class="surface-card">
+              <h2 class="surface-card__title">Trip budget inputs</h2>
+              <p class="surface-card__subtitle">
+                Adjust these numbers and see realtime totals and per-person estimates to the right.
+              </p>
+              <div class="form-grid" style="margin-top:1rem;">
+                <label class="form-field">
+                  <span class="label">Travellers</span>
+                  <input class="input" type="number" min="1" value="4" data-budget="people" />
+                </label>
+                <label class="form-field">
+                  <span class="label">Currency</span>
+                  <select class="select" aria-label="Currency selector">
+                    <option selected>USD</option>
+                    <option>EUR</option>
+                    <option>GBP</option>
+                    <option>INR</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form-grid" style="margin-top:1.2rem;">
+                <label class="form-field">
+                  <span class="label">Lodging</span>
+                  <input class="input" type="number" value="1600" data-budget="expense" />
+                </label>
+                <label class="form-field">
+                  <span class="label">Flights / rail</span>
+                  <input class="input" type="number" value="1400" data-budget="expense" />
+                </label>
+                <label class="form-field">
+                  <span class="label">Food & coffee</span>
+                  <input class="input" type="number" value="700" data-budget="expense" />
+                </label>
+                <label class="form-field">
+                  <span class="label">Experiences</span>
+                  <input class="input" type="number" value="500" data-budget="expense" />
+                </label>
+              </div>
+            </article>
+
+            <article class="surface-card surface-card--soft">
+              <h2 class="surface-card__title">Live bill-split preview</h2>
+              <p class="surface-card__subtitle">
+                These numbers update as you tweak the inputs on the left. Hook this panel into payments and wallets later.
+              </p>
+              <div class="budget-summary-row" style="margin-top:1rem;">
+                <div>
+                  <div class="label">Total budget</div>
+                  <div class="budget-summary__value" data-budget="total">$4,200</div>
+                  <div class="stat__label">Before marketplace discounts</div>
+                </div>
+                <div>
+                  <div class="label">Per traveller</div>
+                  <div class="budget-summary__value" data-budget="per-person">$1,050</div>
+                  <div class="stat__label">Target bill-split</div>
+                </div>
+                <div>
+                  <div class="label">Protected minimums</div>
+                  <div class="budget-summary__value">Lodging, safety, transit</div>
+                  <div class="stat__label">Non-negotiable categories</div>
+                </div>
+              </div>
+              <div class="budget-tag-row" style="margin-top:0.9rem;">
+                <span class="pill">Role-based caps</span>
+                <span class="pill">Export to CSV</span>
+                <span class="pill">Connect to payment API</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__meta">Budget and bill-split modules are wired for future payments and analytics.</div>
+          <div class="footer__links">
+            <a href="marketplace.html">Marketplace</a>
+            <a href="map.html">Map planning</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

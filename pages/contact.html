@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-page="contact">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Together — Contact</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <script defer src="../js/app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="navbar">
+        <div class="navbar__inner">
+          <a href="index.html" class="navbar__brand">
+            <span class="navbar__logo" aria-hidden="true"></span>
+            <div>
+              <div class="navbar__title">Plan Together</div>
+              <div class="navbar__meta">Partners, investors, and support</div>
+            </div>
+          </a>
+          <nav class="navbar__nav" aria-label="Primary">
+            <a class="navbar__link" href="index.html">Home</a>
+            <a class="navbar__link" href="product.html">Product</a>
+            <a class="navbar__link" href="features.html">Features</a>
+            <a class="navbar__link" href="ai.html">AI</a>
+            <a class="navbar__link" href="marketplace.html">Marketplace</a>
+            <a class="navbar__link navbar__link--active" href="contact.html">Contact</a>
+          </nav>
+          <div class="navbar__pill">High-signal conversations only</div>
+        </div>
+      </header>
+
+      <main class="page-shell">
+        <section class="section reveal-on-scroll">
+          <div class="section__header">
+            <div>
+              <div class="section__eyebrow">Get in touch</div>
+              <h1 class="section__title">Talk to the Plan Together team.</h1>
+              <p class="section__subtitle">
+                Use this form to start investor, partnership, or operations conversations. Support inquiries are welcome as we grow.
+              </p>
+            </div>
+          </div>
+          <article class="surface-card">
+            <form class="form-grid" data-form="contact">
+              <label class="form-field">
+                <span class="label">Full name</span>
+                <input class="input" type="text" name="name" required placeholder="Your name" />
+              </label>
+              <label class="form-field">
+                <span class="label">Company / organisation</span>
+                <input class="input" type="text" name="company" placeholder="Where you are reaching from" />
+              </label>
+              <label class="form-field">
+                <span class="label">Email</span>
+                <input class="input" type="email" name="email" required placeholder="you@company.com" />
+              </label>
+              <label class="form-field">
+                <span class="label">Conversation type</span>
+                <select class="select" name="type" required>
+                  <option value="investor">Investor</option>
+                  <option value="partner">Partner / operator</option>
+                  <option value="support">Support / customer</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+              <label class="form-field" style="grid-column:1/-1;">
+                <span class="label">What would you like to explore?</span>
+                <textarea class="textarea" name="message" rows="4" required placeholder="Share a clear, concise overview."></textarea>
+              </label>
+              <div style="grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                <button class="btn btn--primary" type="submit">Send & continue</button>
+                <p class="section__subtitle" style="font-size:0.8rem;max-width:280px;">
+                  We route messages manually while the product is in startup mode. You will see a thank you screen after sending.
+                </p>
+              </div>
+            </form>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__meta">We prioritise thoughtful partnerships and high-trust conversations.</div>
+          <div class="footer__links">
+            <a href="about.html">About</a>
+            <a href="index.html">Home</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-page="map">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Together — Map & Routing</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <script defer src="../js/app.js"></script>
+    <script defer src="../js/map.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="navbar">
+        <div class="navbar__inner">
+          <a href="index.html" class="navbar__brand">
+            <span class="navbar__logo" aria-hidden="true"></span>
+            <div>
+              <div class="navbar__title">Plan Together</div>
+              <div class="navbar__meta">Interactive map & routes</div>
+            </div>
+          </a>
+          <nav class="navbar__nav" aria-label="Primary">
+            <a class="navbar__link" href="index.html">Home</a>
+            <a class="navbar__link" href="product.html">Product</a>
+            <a class="navbar__link" href="features.html">Features</a>
+            <a class="navbar__link" href="ai.html">AI</a>
+            <a class="navbar__link navbar__link--active" href="map.html">Map</a>
+          </nav>
+          <div class="navbar__pill">Ready for live tiles & POIs</div>
+        </div>
+      </header>
+
+      <main class="page-shell">
+        <section class="section reveal-on-scroll">
+          <div class="section__header">
+            <div>
+              <div class="section__eyebrow">Spatial intelligence</div>
+              <h1 class="section__title">Multi-stop routes with real travel intelligence baked in.</h1>
+              <p class="section__subtitle">
+                Plan Together is designed to layer safety, time, and distance onto every move your group makes.
+              </p>
+            </div>
+          </div>
+          <div class="map-shell">
+            <div class="map-canvas" aria-label="Map prototype canvas">
+              <div class="map-canvas__hint">Drop-in zone for live map SDK and safety layers.</div>
+            </div>
+            <aside class="surface-card surface-card--soft">
+              <h2 class="surface-card__title">Route overview</h2>
+              <p class="surface-card__subtitle">
+                Click a stop to focus. Add custom stops using the field below. Numbers update instantly.
+              </p>
+              <div class="stat-row" style="margin-top:0.9rem;">
+                <div>
+                  <div class="label">Total distance</div>
+                  <div class="stat__value" data-map="summary-distance">54 km</div>
+                </div>
+                <div>
+                  <div class="label">Total travel time</div>
+                  <div class="stat__value" data-map="summary-time">72 min total</div>
+                </div>
+              </div>
+              <div class="map-route-list" data-map="route-list" style="margin-top:0.8rem;"></div>
+              <div style="margin-top:0.9rem;" class="form-grid">
+                <label class="form-field">
+                  <span class="label">Add a stop</span>
+                  <input class="input" type="text" placeholder="e.g. Design museum" data-map="add-stop-input" />
+                </label>
+                <div style="display:flex;align-items:flex-end;">
+                  <button class="btn btn--ghost" type="button" data-map="add-stop">Add to route</button>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__meta">Map UI is ready to connect to routing APIs, tiles, and safety overlays.</div>
+          <div class="footer__links">
+            <a href="safety.html">Safety</a>
+            <a href="marketplace.html">Marketplace</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
